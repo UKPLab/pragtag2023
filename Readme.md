@@ -1,6 +1,6 @@
 # PragTag-2023 Shared Task Archive
 
-This repository will archive the code and data for PragTag-2023: a shared task on **Low-Resource Multi-Domain Pragmatic Tagging of Peer Reviews** that took place as part of the [10th Argument Mining Workshop](https://argmining-org.github.io/2023/) at [EMNLP-2023](https://2023.emnlp.org). 
+This repository will archive the code and data for PragTag-2023: our shared task on **Low-Resource Multi-Domain Pragmatic Tagging of Peer Reviews** that took place as part of the [10th Argument Mining Workshop](https://argmining-org.github.io/2023/) at [EMNLP-2023](https://2023.emnlp.org). 
 
 **🚀 Coming soon!** We are packaging everything for long-term archival. To access the Shared Task materials in the meantime, please use our [Codalab competition page](https://codalab.lisn.upsaclay.fr/competitions/13334), and don't hesitate to contact us if you need help.
 
