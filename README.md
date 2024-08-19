@@ -42,13 +42,7 @@ Download the repo
 git clone https://github.com/UKPLab/pragtag2023
 ```
 
-Assuming you want to test your model on the task, first loda the evaluation data
-```python 
-
-
-```
-
-After your model predicted the labels:
+If you want to test your model on the shared task data:
 ```python
 import json
 from code.evaluation.load import load_input_data
@@ -62,6 +56,7 @@ with open("data/reference_secret/predicted.json", "w+") as f:
 
 ```
 
+Then simply run the evaluation script:
 ```shell
 python3 code/evaluation/main.py data/reference_secret .
 
