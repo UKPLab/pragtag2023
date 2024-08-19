@@ -35,6 +35,45 @@ Approaches to low-data NLP processing for peer review remain under-investigated.
 </p>
 
 
+## Quick Start and Setup
+
+Download the repo
+```shell
+git clone https://github.com/UKPLab/pragtag2023
+```
+
+Assuming you want to test your model on the task, first loda the evaluation data
+```python 
+
+
+```
+
+After your model predicted the labels:
+```python
+import json
+from code.evaluation.load import load_input_data
+
+data = load_input_data("data/public_main/data/public_secret/test_inputs.json")
+
+predictions = [{"sid": "output"}] # todo: run your model inference on the data to get predictions
+
+with open("data/reference_secret/predicted.json", "w+") as f:
+	json.dump(predictions, f)
+
+```
+
+```shell
+python3 code/evaluation/main.py data/reference_secret .
+
+```
+
+
+To get you started on the task, you can run the fine-tuning-based baseline (`roberta-base`). Run the following command to train the baseline:
+```shell
+python3 code/baseline/finetune_baseline.py data/public_main/train_inputs_full.json
+
+```
+
 ## Repository Structure
 
 ```
@@ -59,13 +98,8 @@ If you want to load the data for other purposes, you should use the `test_labels
 the `test_inputs.json` inside `public_secret` to get the full dataset of pragmatic tagged reviews including the COLING20
 and the F1000RD data.
 
-## Baseline
+Find more details in the README of the data folder.
 
-We provide a simple fine-tuning-based baseline based on `roberta-base`. Run the following command to train the baseline:
-```shell
-python3 code/baseline/finetune_baseline.py data/public_main/train_inputs_full.json
-
-```
 
 ## Final Participant Leaderboard
 
@@ -122,3 +156,8 @@ The shared task was organized by the members of the InterText initiative at the 
 * E-mail inquiries: arr-data (at) ukp.tu-darmstadt.de
 * Learn more about the [InterText initiative](https://intertext.ukp-lab.de)
 * Learn more about the [UKP Lab](https://www.informatik.tu-darmstadt.de/ukp)
+
+
+## DISCLAIMER
+
+This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication. 
