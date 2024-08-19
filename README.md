@@ -42,6 +42,7 @@ Download the repo
 git clone https://github.com/UKPLab/pragtag2023
 
 pip install -r code/evaluation/requirements.txt
+pip install -r code/baseline/requirements.txt
 ```
 
 If you want to test your model on the shared task data:
