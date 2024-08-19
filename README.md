@@ -47,7 +47,7 @@ If you want to test your model on the shared task data:
 import json
 from code.evaluation.load import load_input_data
 
-data = load_input_data("data/public_main/data/public_secret/test_inputs.json")
+data = load_input_data("data/public_secret/test_inputs.json")
 
 predictions = [{"sid": "output"}] # todo: run your model inference on the data to get predictions
 
