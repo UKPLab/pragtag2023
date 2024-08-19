@@ -40,6 +40,8 @@ Approaches to low-data NLP processing for peer review remain under-investigated.
 Download the repo
 ```shell
 git clone https://github.com/UKPLab/pragtag2023
+
+pip install -r code/evaluation/requirements.txt
 ```
 
 If you want to test your model on the shared task data:
